@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6E357A9138013DA00FFDE60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357A8138013DA00FFDE60 /* UIKit.framework */; };
+		E6E357AB138013DA00FFDE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AA138013DA00FFDE60 /* Foundation.framework */; };
+		E6E357AD138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */; };
+		E6E357B3138013DA00FFDE60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6E357B1138013DA00FFDE60 /* InfoPlist.strings */; };
+		E6E357B6138013DA00FFDE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357B5138013DA00FFDE60 /* main.m */; };
+		E6E357B9138013DA00FFDE60 /* FileDownloaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357B8138013DA00FFDE60 /* FileDownloaderAppDelegate.m */; };
+		E6E357BC138013DA00FFDE60 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E357BA138013DA00FFDE60 /* MainWindow.xib */; };
+		E6E357BF138013DA00FFDE60 /* FileDownloaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357BE138013DA00FFDE60 /* FileDownloaderViewController.m */; };
+		E6E357C2138013DA00FFDE60 /* FileDownloaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E357C0138013DA00FFDE60 /* FileDownloaderViewController.xib */; };
+		E6E357C9138013DA00FFDE60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357A8138013DA00FFDE60 /* UIKit.framework */; };
+		E6E357CA138013DA00FFDE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AA138013DA00FFDE60 /* Foundation.framework */; };
+		E6E357CB138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */; };
+		E6E357D3138013DA00FFDE60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6E357D1138013DA00FFDE60 /* InfoPlist.strings */; };
+		E6E357D6138013DA00FFDE60 /* FileDownloaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */; };
+		E6E357D8138013DA00FFDE60 /* FileDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E357CC138013DA00FFDE60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E3579B138013DA00FFDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E357A3138013DA00FFDE60;
+			remoteInfo = FileDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6E357A4138013DA00FFDE60 /* FileDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E357A8138013DA00FFDE60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6E357AA138013DA00FFDE60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E6E357B0138013DA00FFDE60 /* FileDownloader-Info.plist */ = {isa = PBXFileReference; path = "FileDownloader-Info.plist"; sourceTree = "<group>"; };
+		E6E357B2138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6E357B4138013DA00FFDE60 /* FileDownloader-Prefix.pch */ = {isa = PBXFileReference; path = "FileDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		E6E357B5138013DA00FFDE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6E357B7138013DA00FFDE60 /* FileDownloaderAppDelegate.h */ = {isa = PBXFileReference; path = FileDownloaderAppDelegate.h; sourceTree = "<group>"; };
+		E6E357B8138013DA00FFDE60 /* FileDownloaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderAppDelegate.m; sourceTree = "<group>"; };
+		E6E357BB138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E6E357BD138013DA00FFDE60 /* FileDownloaderViewController.h */ = {isa = PBXFileReference; path = FileDownloaderViewController.h; sourceTree = "<group>"; };
+		E6E357BE138013DA00FFDE60 /* FileDownloaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderViewController.m; sourceTree = "<group>"; };
+		E6E357C1138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FileDownloaderViewController.xib; sourceTree = "<group>"; };
+		E6E357C8138013DA00FFDE60 /* FileDownloaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileDownloaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E357D0138013DA00FFDE60 /* FileDownloaderTests-Info.plist */ = {isa = PBXFileReference; path = "FileDownloaderTests-Info.plist"; sourceTree = "<group>"; };
+		E6E357D2138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6E357D4138013DA00FFDE60 /* FileDownloaderTests-Prefix.pch */ = {isa = PBXFileReference; path = "FileDownloaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloaderTests.h; sourceTree = "<group>"; };
+		E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6E357A1138013DA00FFDE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357A9138013DA00FFDE60 /* UIKit.framework in Frameworks */,
+				E6E357AB138013DA00FFDE60 /* Foundation.framework in Frameworks */,
+				E6E357AD138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E357C4138013DA00FFDE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357C9138013DA00FFDE60 /* UIKit.framework in Frameworks */,
+				E6E357CA138013DA00FFDE60 /* Foundation.framework in Frameworks */,
+				E6E357CB138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6E35799138013DA00FFDE60 = {
+			isa = PBXGroup;
+			children = (
+				E6E357AE138013DA00FFDE60 /* FileDownloader */,
+				E6E357CE138013DA00FFDE60 /* FileDownloaderTests */,
+				E6E357A7138013DA00FFDE60 /* Frameworks */,
+				E6E357A5138013DA00FFDE60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6E357A5138013DA00FFDE60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357A4138013DA00FFDE60 /* FileDownloader.app */,
+				E6E357C8138013DA00FFDE60 /* FileDownloaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6E357A7138013DA00FFDE60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357A8138013DA00FFDE60 /* UIKit.framework */,
+				E6E357AA138013DA00FFDE60 /* Foundation.framework */,
+				E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6E357AE138013DA00FFDE60 /* FileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357B7138013DA00FFDE60 /* FileDownloaderAppDelegate.h */,
+				E6E357B8138013DA00FFDE60 /* FileDownloaderAppDelegate.m */,
+				E6E357BA138013DA00FFDE60 /* MainWindow.xib */,
+				E6E357BD138013DA00FFDE60 /* FileDownloaderViewController.h */,
+				E6E357BE138013DA00FFDE60 /* FileDownloaderViewController.m */,
+				E6E357C0138013DA00FFDE60 /* FileDownloaderViewController.xib */,
+				E6E357AF138013DA00FFDE60 /* Supporting Files */,
+			);
+			path = FileDownloader;
+			sourceTree = "<group>";
+		};
+		E6E357AF138013DA00FFDE60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357B0138013DA00FFDE60 /* FileDownloader-Info.plist */,
+				E6E357B1138013DA00FFDE60 /* InfoPlist.strings */,
+				E6E357B4138013DA00FFDE60 /* FileDownloader-Prefix.pch */,
+				E6E357B5138013DA00FFDE60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6E357CE138013DA00FFDE60 /* FileDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */,
+				E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */,
+				E6E357CF138013DA00FFDE60 /* Supporting Files */,
+			);
+			path = FileDownloaderTests;
+			sourceTree = "<group>";
+		};
+		E6E357CF138013DA00FFDE60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6E357D0138013DA00FFDE60 /* FileDownloaderTests-Info.plist */,
+				E6E357D1138013DA00FFDE60 /* InfoPlist.strings */,
+				E6E357D4138013DA00FFDE60 /* FileDownloaderTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6E357A3138013DA00FFDE60 /* FileDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E357DB138013DA00FFDE60 /* Build configuration list for PBXNativeTarget "FileDownloader" */;
+			buildPhases = (
+				E6E357A0138013DA00FFDE60 /* Sources */,
+				E6E357A1138013DA00FFDE60 /* Frameworks */,
+				E6E357A2138013DA00FFDE60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileDownloader;
+			productName = FileDownloader;
+			productReference = E6E357A4138013DA00FFDE60 /* FileDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6E357C7138013DA00FFDE60 /* FileDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E357DE138013DA00FFDE60 /* Build configuration list for PBXNativeTarget "FileDownloaderTests" */;
+			buildPhases = (
+				E6E357C3138013DA00FFDE60 /* Sources */,
+				E6E357C4138013DA00FFDE60 /* Frameworks */,
+				E6E357C5138013DA00FFDE60 /* Resources */,
+				E6E357C6138013DA00FFDE60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E357CD138013DA00FFDE60 /* PBXTargetDependency */,
+			);
+			name = FileDownloaderTests;
+			productName = FileDownloaderTests;
+			productReference = E6E357C8138013DA00FFDE60 /* FileDownloaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6E3579B138013DA00FFDE60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Unboxed Consulting";
+			};
+			buildConfigurationList = E6E3579E138013DA00FFDE60 /* Build configuration list for PBXProject "FileDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6E35799138013DA00FFDE60;
+			productRefGroup = E6E357A5138013DA00FFDE60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6E357A3138013DA00FFDE60 /* FileDownloader */,
+				E6E357C7138013DA00FFDE60 /* FileDownloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6E357A2138013DA00FFDE60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357B3138013DA00FFDE60 /* InfoPlist.strings in Resources */,
+				E6E357BC138013DA00FFDE60 /* MainWindow.xib in Resources */,
+				E6E357C2138013DA00FFDE60 /* FileDownloaderViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E357C5138013DA00FFDE60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357D3138013DA00FFDE60 /* InfoPlist.strings in Resources */,
+				E6E357D6138013DA00FFDE60 /* FileDownloaderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6E357C6138013DA00FFDE60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6E357A0138013DA00FFDE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357B6138013DA00FFDE60 /* main.m in Sources */,
+				E6E357B9138013DA00FFDE60 /* FileDownloaderAppDelegate.m in Sources */,
+				E6E357BF138013DA00FFDE60 /* FileDownloaderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E357C3138013DA00FFDE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E357D8138013DA00FFDE60 /* FileDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6E357CD138013DA00FFDE60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E357A3138013DA00FFDE60 /* FileDownloader */;
+			targetProxy = E6E357CC138013DA00FFDE60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6E357B1138013DA00FFDE60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E357B2138013DA00FFDE60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E6E357BA138013DA00FFDE60 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E357BB138013DA00FFDE60 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E6E357C0138013DA00FFDE60 /* FileDownloaderViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E357C1138013DA00FFDE60 /* en */,
+			);
+			name = FileDownloaderViewController.xib;
+			sourceTree = "<group>";
+		};
+		E6E357D1138013DA00FFDE60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E357D2138013DA00FFDE60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6E357D9138013DA00FFDE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6E357DA138013DA00FFDE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E6E357DC138013DA00FFDE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDownloader/FileDownloader-Prefix.pch";
+				INFOPLIST_FILE = "FileDownloader/FileDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6E357DD138013DA00FFDE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDownloader/FileDownloader-Prefix.pch";
+				INFOPLIST_FILE = "FileDownloader/FileDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E6E357DF138013DA00FFDE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileDownloader.app/FileDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDownloaderTests/FileDownloaderTests-Prefix.pch";
+				INFOPLIST_FILE = "FileDownloaderTests/FileDownloaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E6E357E0138013DA00FFDE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileDownloader.app/FileDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDownloaderTests/FileDownloaderTests-Prefix.pch";
+				INFOPLIST_FILE = "FileDownloaderTests/FileDownloaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6E3579E138013DA00FFDE60 /* Build configuration list for PBXProject "FileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E357D9138013DA00FFDE60 /* Debug */,
+				E6E357DA138013DA00FFDE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E357DB138013DA00FFDE60 /* Build configuration list for PBXNativeTarget "FileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E357DC138013DA00FFDE60 /* Debug */,
+				E6E357DD138013DA00FFDE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E6E357DE138013DA00FFDE60 /* Build configuration list for PBXNativeTarget "FileDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E357DF138013DA00FFDE60 /* Debug */,
+				E6E357E0138013DA00FFDE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6E3579B138013DA00FFDE60 /* Project object */;
+}
