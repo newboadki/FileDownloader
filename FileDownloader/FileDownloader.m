@@ -165,7 +165,7 @@
 	/************************************************************************************/
 	/*	Adds the received piece of data to the file.									*/
 	/************************************************************************************/	
-	[self.fileHandler writeData: newData];
+	[self.fileHandler writeData: newData]; // fileHandler might be nil, depending on how the instance of this class was initialized. So we are just writing to a file if a path was specified at initialization time.
     [self->data appendData:newData];
 }
 
