@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62B84CC138308E400A23740 /* FileDownloaderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E62B84CB138308E400A23740 /* FileDownloaderDelegate.m */; };
+		E66841471385839A0025697D /* ChallengeSender.m in Sources */ = {isa = PBXBuildFile; fileRef = E66841461385839A0025697D /* ChallengeSender.m */; };
 		E6E357A9138013DA00FFDE60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357A8138013DA00FFDE60 /* UIKit.framework */; };
 		E6E357AB138013DA00FFDE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AA138013DA00FFDE60 /* Foundation.framework */; };
 		E6E357AD138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */; };
@@ -22,6 +24,11 @@
 		E6E357D3138013DA00FFDE60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6E357D1138013DA00FFDE60 /* InfoPlist.strings */; };
 		E6E357D6138013DA00FFDE60 /* FileDownloaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */; };
 		E6E357D8138013DA00FFDE60 /* FileDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */; };
+		E6E357E3138016D300FFDE60 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357E2138016D300FFDE60 /* FileDownloader.m */; };
+		E6E357E4138016D300FFDE60 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357E2138016D300FFDE60 /* FileDownloader.m */; };
+		E6E357E813801F6100FFDE60 /* ConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357E713801F6100FFDE60 /* ConsoleLogger.m */; };
+		E6E357E913801F6100FFDE60 /* ConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E357E713801F6100FFDE60 /* ConsoleLogger.m */; };
+		E6E3581E138044FE00FFDE60 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E35817138044FE00FFDE60 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,26 +42,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E62B84CA138308E400A23740 /* FileDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloaderDelegate.h; sourceTree = "<group>"; };
+		E62B84CB138308E400A23740 /* FileDownloaderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderDelegate.m; sourceTree = "<group>"; };
+		E66841451385839A0025697D /* ChallengeSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeSender.h; sourceTree = "<group>"; };
+		E66841461385839A0025697D /* ChallengeSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeSender.m; sourceTree = "<group>"; };
 		E6E357A4138013DA00FFDE60 /* FileDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E357A8138013DA00FFDE60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6E357AA138013DA00FFDE60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6E357AC138013DA00FFDE60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E6E357B0138013DA00FFDE60 /* FileDownloader-Info.plist */ = {isa = PBXFileReference; path = "FileDownloader-Info.plist"; sourceTree = "<group>"; };
+		E6E357B0138013DA00FFDE60 /* FileDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileDownloader-Info.plist"; sourceTree = "<group>"; };
 		E6E357B2138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E6E357B4138013DA00FFDE60 /* FileDownloader-Prefix.pch */ = {isa = PBXFileReference; path = "FileDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		E6E357B4138013DA00FFDE60 /* FileDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileDownloader-Prefix.pch"; sourceTree = "<group>"; };
 		E6E357B5138013DA00FFDE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E6E357B7138013DA00FFDE60 /* FileDownloaderAppDelegate.h */ = {isa = PBXFileReference; path = FileDownloaderAppDelegate.h; sourceTree = "<group>"; };
+		E6E357B7138013DA00FFDE60 /* FileDownloaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloaderAppDelegate.h; sourceTree = "<group>"; };
 		E6E357B8138013DA00FFDE60 /* FileDownloaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderAppDelegate.m; sourceTree = "<group>"; };
 		E6E357BB138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		E6E357BD138013DA00FFDE60 /* FileDownloaderViewController.h */ = {isa = PBXFileReference; path = FileDownloaderViewController.h; sourceTree = "<group>"; };
+		E6E357BD138013DA00FFDE60 /* FileDownloaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloaderViewController.h; sourceTree = "<group>"; };
 		E6E357BE138013DA00FFDE60 /* FileDownloaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderViewController.m; sourceTree = "<group>"; };
 		E6E357C1138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FileDownloaderViewController.xib; sourceTree = "<group>"; };
 		E6E357C8138013DA00FFDE60 /* FileDownloaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileDownloaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E357D0138013DA00FFDE60 /* FileDownloaderTests-Info.plist */ = {isa = PBXFileReference; path = "FileDownloaderTests-Info.plist"; sourceTree = "<group>"; };
+		E6E357D0138013DA00FFDE60 /* FileDownloaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileDownloaderTests-Info.plist"; sourceTree = "<group>"; };
 		E6E357D2138013DA00FFDE60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E6E357D4138013DA00FFDE60 /* FileDownloaderTests-Prefix.pch */ = {isa = PBXFileReference; path = "FileDownloaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		E6E357D4138013DA00FFDE60 /* FileDownloaderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileDownloaderTests-Prefix.pch"; sourceTree = "<group>"; };
 		E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloaderTests.h; sourceTree = "<group>"; };
 		E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderTests.m; sourceTree = "<group>"; };
+		E6E357E1138016D300FFDE60 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
+		E6E357E2138016D300FFDE60 /* FileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloader.m; sourceTree = "<group>"; };
+		E6E357E5138018C500FFDE60 /* FileDownloaderDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloaderDelegateProtocol.h; sourceTree = "<group>"; };
+		E6E357E613801F6100FFDE60 /* ConsoleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleLogger.h; sourceTree = "<group>"; };
+		E6E357E713801F6100FFDE60 /* ConsoleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleLogger.m; sourceTree = "<group>"; };
+		E6E35817138044FE00FFDE60 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		E6E35818138044FE00FFDE60 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		E6E35819138044FE00FFDE60 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		E6E3581A138044FE00FFDE60 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		E6E3581B138044FE00FFDE60 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		E6E3581C138044FE00FFDE60 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		E6E3581D138044FE00FFDE60 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +98,7 @@
 				E6E357C9138013DA00FFDE60 /* UIKit.framework in Frameworks */,
 				E6E357CA138013DA00FFDE60 /* Foundation.framework in Frameworks */,
 				E6E357CB138013DA00FFDE60 /* CoreGraphics.framework in Frameworks */,
+				E6E3581E138044FE00FFDE60 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +108,7 @@
 		E6E35799138013DA00FFDE60 = {
 			isa = PBXGroup;
 			children = (
+				E6E35815138044FE00FFDE60 /* Tests */,
 				E6E357AE138013DA00FFDE60 /* FileDownloader */,
 				E6E357CE138013DA00FFDE60 /* FileDownloaderTests */,
 				E6E357A7138013DA00FFDE60 /* Frameworks */,
@@ -116,10 +141,15 @@
 				E6E357B7138013DA00FFDE60 /* FileDownloaderAppDelegate.h */,
 				E6E357B8138013DA00FFDE60 /* FileDownloaderAppDelegate.m */,
 				E6E357BA138013DA00FFDE60 /* MainWindow.xib */,
+				E6E357E1138016D300FFDE60 /* FileDownloader.h */,
+				E6E357E2138016D300FFDE60 /* FileDownloader.m */,
 				E6E357BD138013DA00FFDE60 /* FileDownloaderViewController.h */,
 				E6E357BE138013DA00FFDE60 /* FileDownloaderViewController.m */,
 				E6E357C0138013DA00FFDE60 /* FileDownloaderViewController.xib */,
 				E6E357AF138013DA00FFDE60 /* Supporting Files */,
+				E6E357E5138018C500FFDE60 /* FileDownloaderDelegateProtocol.h */,
+				E6E357E613801F6100FFDE60 /* ConsoleLogger.h */,
+				E6E357E713801F6100FFDE60 /* ConsoleLogger.m */,
 			);
 			path = FileDownloader;
 			sourceTree = "<group>";
@@ -138,9 +168,13 @@
 		E6E357CE138013DA00FFDE60 /* FileDownloaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6E357CF138013DA00FFDE60 /* Supporting Files */,
 				E6E357D5138013DA00FFDE60 /* FileDownloaderTests.h */,
 				E6E357D7138013DA00FFDE60 /* FileDownloaderTests.m */,
-				E6E357CF138013DA00FFDE60 /* Supporting Files */,
+				E62B84CA138308E400A23740 /* FileDownloaderDelegate.h */,
+				E62B84CB138308E400A23740 /* FileDownloaderDelegate.m */,
+				E66841451385839A0025697D /* ChallengeSender.h */,
+				E66841461385839A0025697D /* ChallengeSender.m */,
 			);
 			path = FileDownloaderTests;
 			sourceTree = "<group>";
@@ -153,6 +187,28 @@
 				E6E357D4138013DA00FFDE60 /* FileDownloaderTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6E35815138044FE00FFDE60 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E35816138044FE00FFDE60 /* OCMock */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E6E35816138044FE00FFDE60 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E6E35817138044FE00FFDE60 /* libOCMock.a */,
+				E6E35818138044FE00FFDE60 /* NSNotificationCenter+OCMAdditions.h */,
+				E6E35819138044FE00FFDE60 /* OCMArg.h */,
+				E6E3581A138044FE00FFDE60 /* OCMConstraint.h */,
+				E6E3581B138044FE00FFDE60 /* OCMock.h */,
+				E6E3581C138044FE00FFDE60 /* OCMockObject.h */,
+				E6E3581D138044FE00FFDE60 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +322,8 @@
 				E6E357B6138013DA00FFDE60 /* main.m in Sources */,
 				E6E357B9138013DA00FFDE60 /* FileDownloaderAppDelegate.m in Sources */,
 				E6E357BF138013DA00FFDE60 /* FileDownloaderViewController.m in Sources */,
+				E6E357E3138016D300FFDE60 /* FileDownloader.m in Sources */,
+				E6E357E813801F6100FFDE60 /* ConsoleLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6E357D8138013DA00FFDE60 /* FileDownloaderTests.m in Sources */,
+				E6E357E4138016D300FFDE60 /* FileDownloader.m in Sources */,
+				E6E357E913801F6100FFDE60 /* ConsoleLogger.m in Sources */,
+				E62B84CC138308E400A23740 /* FileDownloaderDelegate.m in Sources */,
+				E66841471385839A0025697D /* ChallengeSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +408,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = RELEASE;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -363,7 +426,12 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileDownloader/FileDownloader-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "FileDownloader/FileDownloader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OCMock\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,7 +444,12 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileDownloader/FileDownloader-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "FileDownloader/FileDownloader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OCMock\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -394,10 +467,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileDownloaderTests/FileDownloaderTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/Tests/OCMock",
+				);
 				INFOPLIST_FILE = "FileDownloaderTests/FileDownloaderTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OCMock\"",
+					"\"$(SRCROOT)/Tests/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lxml2",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Tests/OCMock/libOCMock.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -416,10 +502,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileDownloaderTests/FileDownloaderTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/Tests/OCMock",
+				);
 				INFOPLIST_FILE = "FileDownloaderTests/FileDownloaderTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OCMock\"",
+					"\"$(SRCROOT)/Tests/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lxml2",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Tests/OCMock/libOCMock.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -446,6 +545,7 @@
 				E6E357DD138013DA00FFDE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6E357DE138013DA00FFDE60 /* Build configuration list for PBXNativeTarget "FileDownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +554,7 @@
 				E6E357E0138013DA00FFDE60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

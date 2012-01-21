@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FileDownloaderViewController.h"
+#import "FileDownloader.h"
+#import "FileDownloaderDelegateProtocol.h"
+
 
 @class FileDownloaderViewController;
 
-@interface FileDownloaderAppDelegate : NSObject <UIApplicationDelegate> {
+@interface FileDownloaderAppDelegate : NSObject <UIApplicationDelegate, FileDownloaderDelegateProtocol>
+{
 
 }
 

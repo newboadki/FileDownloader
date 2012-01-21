@@ -8,8 +8,6 @@
 
 #import "FileDownloaderAppDelegate.h"
 
-#import "FileDownloaderViewController.h"
-
 @implementation FileDownloaderAppDelegate
 
 
@@ -21,10 +19,52 @@
 {
     // Override point for customization after application launch.
      
+    NSString* file_path = [NSString stringWithFormat: @"%@xml/%@", NSTemporaryDirectory(), @"file.xml"];    
+    [[NSFileManager defaultManager] removeItemAtPath:file_path error:nil];
+    NSLog(@"exists %i", [[NSFileManager defaultManager] fileExistsAtPath:file_path]);
+    FileDownloader* fd = [[FileDownloader alloc] initWithURL:[NSURL URLWithString:@"http://www.apple.com"] andFilePath:nil andCredential:nil andDelegate:self];
+
+    [fd start];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+- (void) handleSuccessfullDownloadWithData:(NSData*)data
+{
+    NSLog(@"SUCCESS! %i", [data length]);
+    NSString* file_path = [NSString stringWithFormat: @"%@xml/%@", NSTemporaryDirectory(), @"file.xml"];
+    NSLog(@"exists %i", [[NSFileManager defaultManager] fileExistsAtPath:file_path]);
+    NSLog(@">>>>>>>>>>> %@", [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:file_path] encoding:NSUTF8StringEncoding]);
+    NSLog(@"**************************** %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+}
+
+
+- (void) handleFailedDownloadWithError:(NSError*)error
+{
+
+}
+
+
+- (void) handleAuthenticationFailed
+{
+
+}
+
+
+- (void) connectionReceivedResponseWithErrorCode:(NSInteger) statusCode
+{
+
+}
+
+
+- (void) connectionCouldNotBeCreated
+{
+
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

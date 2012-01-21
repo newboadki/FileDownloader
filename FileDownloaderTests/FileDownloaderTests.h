@@ -7,11 +7,13 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "OCMock.h"
+#import "FileDownloader.h"
+#import "FileDownloaderDelegateProtocol.h"
+#import "ChallengeSender.h"
 
-
-@interface FileDownloaderTests : SenTestCase {
-@private
-    
+@interface FileDownloaderTests : SenTestCase
+{
 }
 
 @end
