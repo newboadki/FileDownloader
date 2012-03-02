@@ -20,7 +20,6 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet FileDownloaderViewController *viewController;
-
+@property (nonatomic, retain) FileDownloader* fileDownloader;
 @end

@@ -12,19 +12,21 @@
 
 
 @synthesize window=_window;
-
 @synthesize viewController=_viewController;
+@synthesize fileDownloader;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
      
     NSString* file_path = [NSString stringWithFormat: @"%@xml/%@", NSTemporaryDirectory(), @"file.xml"];    
-    [[NSFileManager defaultManager] removeItemAtPath:file_path error:nil];
-    NSLog(@"exists %i", [[NSFileManager defaultManager] fileExistsAtPath:file_path]);
-    FileDownloader* fd = [[FileDownloader alloc] initWithURL:[NSURL URLWithString:@"http://www.apple.com"] andFilePath:nil andCredential:nil andDelegate:self];
-
-    [fd start];
+    [[NSFileManager defaultManager] removeItemAtPath:file_path error:nil];    
+    
+    FileDownloader* fd = [[FileDownloader alloc] initWithURL:[NSURL URLWithString:@"http://www.apple.com"] andFilePath:file_path andCredential:nil andDelegate:self];
+    self.fileDownloader = fd;
+    [fd release];
+    
+    [fileDownloader start];
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
@@ -34,11 +36,17 @@
 
 - (void) handleSuccessfullDownloadWithData:(NSData*)data
 {
-    NSLog(@"SUCCESS! %i", [data length]);
+    DebugLog(@"SUCCESS! Received: %d bytes", [data length]);
+    
     NSString* file_path = [NSString stringWithFormat: @"%@xml/%@", NSTemporaryDirectory(), @"file.xml"];
-    NSLog(@"exists %i", [[NSFileManager defaultManager] fileExistsAtPath:file_path]);
-    NSLog(@">>>>>>>>>>> %@", [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:file_path] encoding:NSUTF8StringEncoding]);
-    NSLog(@"**************************** %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    NSString* stringFromFile = [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:file_path] encoding:NSUTF8StringEncoding];
+    NSString* stringFromData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    DebugLog(@">> String from file: %@", stringFromFile);
+    DebugLog(@">> String from NSData %@", stringFromData);
+    
+    [stringFromData release];
+    [stringFromFile release];
 }
 
 
@@ -109,6 +117,7 @@
 {
     [_window release];
     [_viewController release];
+    [fileDownloader release];
     [super dealloc];
 }
 

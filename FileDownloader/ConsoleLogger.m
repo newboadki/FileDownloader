@@ -28,6 +28,7 @@ void DebugLog(NSString* format, ...)
         NSLog(@"%@", string);
     
         // clean up
+        [string release];
         va_end(argumentList);
     #endif
 }
