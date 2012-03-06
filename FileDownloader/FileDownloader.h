@@ -3,7 +3,7 @@
 //  DownloadFromURL
 //
 //  Created by Borja Arias Drake on 24/09/2010.
-//  Copyright 2010 Unboxed Consulting. All rights reserved.
+//  Copyright 2010 Borja Arias Drake. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

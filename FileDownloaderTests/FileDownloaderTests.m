@@ -3,7 +3,7 @@
 //  FileDownloaderTests
 //
 //  Created by Borja Arias Drake on 15/05/2011.
-//  Copyright 2011 Unboxed Consulting. All rights reserved.
+//  Copyright 2011 Borja Arias Drake. All rights reserved.
 //
 
 #import "FileDownloaderTests.h"
